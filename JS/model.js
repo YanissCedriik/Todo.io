@@ -32,3 +32,5 @@ let tempTask= {
     deadline: '',
     status: 'Pending',
 }
+
+let projectList = ["My Project 1", 'My Project 2', "My Project 3",]

@@ -26,7 +26,7 @@ function drawTable(){
             <td><input type="text" placeholder="Example Title..." onchange="tempTask.title = this.value"></td>
             <td><input type="text" placeholder="Example Task..." onchange="tempTask.task = this.value"></td>
             <td><input type="text" placeholder="Example Description..." onchange="tempTask.description = this.value"></td>
-            <td><input type="date" placeholder="Example Deadline" onchange="tempTask.date = this.value"></td>
+            <td><input type="date" placeholder="Example Deadline" onchange="tempTask.deadline = this.value"></td>
             <td><div onclick="addTask()"><img src="Assets/plus-circle-fill.svg"></div></td>
         </tr>
         </tbody>

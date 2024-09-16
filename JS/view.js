@@ -10,7 +10,6 @@ function updateView() {
   app.innerHTML = /*HTML*/ ` 
   <header>
         <div>Todo.io</div>
-        <div><img src="Assets/person-circle.svg"></div>
     </header>
 
 
