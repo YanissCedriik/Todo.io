@@ -8,7 +8,6 @@ let taskList = [
         deadline: "2024-09-16",
         status: 'Pending',
     },
-    
     {
         title: 'Example Title 2',
         task: 'Example Task 2',
@@ -23,7 +22,7 @@ let taskList = [
         deadline: "2024-09-16",
         status: 'Pending af',
     },
-]
+];
 
 let tempTask= {
     title: '',
@@ -31,6 +30,7 @@ let tempTask= {
     description: '',
     deadline: '',
     status: 'Pending',
-}
+};
 
-let projectList = ["My Project 1", 'My Project 2', "My Project 3",]
+let tempProject = "";
+let projectList = ["My Project 1", "My Project 2", "My Project 3",];

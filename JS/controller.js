@@ -14,11 +14,7 @@ function drawTable(){
             <td>${taskList[i].status}</td>
         </tr>
         </tbody>
-        
-        
-        `
-       
-    }
+        `}
     
     HTML+= /*HTML*/ `
     <tbody>
@@ -34,8 +30,6 @@ function drawTable(){
         
         return HTML;
 }
-
-
 
 function addTask(){
     // if løkke som sjekker at tempTask har alle felt fylt ut - hvis ikke, gå ut av funksjonen uten å legge til (return)
@@ -54,6 +48,54 @@ function addTask(){
 
 }
 
+
+
+
+
+
+function drawLists(){
+    let listHTML = "";
+    for (let i = 0; i < projectList.length; i++) {
+        
+        listHTML += /*HTML*/ `
+        <div>${projectList[i]}</div>
+        ` 
+    } 
+
+    listHTML += /*HTML*/`
+    <div><input type="text" placeholder="New Project..." 
+    onkeypress="tempProject = this.value ; clickPress(event) "></div>
+    `
+    
+    return listHTML;
+}
+
+function addProjectToList(){
+    
+    if (!tempProject == ""){
+        projectList.push(tempProject)
+        updateView()
+        
+    }
+    
+    tempProject = "";
+};
+
+
+
+
+
+
+
+
+// Carl var "G" å lagde denne
+function clickPress(event) {   
+    if (event.key == "Enter") {
+        addProjectToList();
+    };
+}
+
+//Han lagde også denne, hva gjør denne egt???
 function CarlSinFunksjon(){
     let div = document.createElement('div')
     div.id = "no"

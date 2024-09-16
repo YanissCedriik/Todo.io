@@ -14,12 +14,7 @@ function updateView() {
 
 
     <div class="sidebarLeft">
-
-        <div>My Project 1</div>
-        <div>My Project 2</div>
-        <div>My Project 3</div>
-        <div><input type="text" placeholder="New Project..."></div>
-
+        ${drawLists()}
     </div>
 
     <table>
